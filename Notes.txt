@@ -1,0 +1,59 @@
+Nama: terserah
+New SDK: API27 -> Android version > Oreo
+
+
+Pilih device
+Emulator -> Munculin HP di dalamnya (Settingnya di device manager)
+
+Setting emulator:
+Device manager -> Create device -> Pilih size HP (Pixel 2) -> Next -> Download R
+---------------------------------------------------------------------------------
+Activity -> page di dalam android
+
+Manifest - AndroidManifest -> setting jalannya android (Nama app, theme dari app, activity" apa yg terdapat dalam aplikasi diubahnya di sini, icon app)
+
+Java - folder paling atas - MainActivity -> nampung project dari aplikasi (Sisa 2 folder untuk testing aplikasi)
+
+Res - drawable -> Gambar" yg biasa dipakai untuk aplikasi 
+Res - values - colors -> Warna selaras
+Res - values - strings -> Lokalisasi (region)
+Res - themes - themes -> Atur tema, warna
+Res - xml -> Setting apliasi
+
+Gradle Scripts -> setting dependency/ library utk aplikasi (Build gradle yg ke2)
+
+*Smua string yang mau dimasukin harus didifine dlu di Res - values - string
+----------------------------------------------------------------------------
+
+LAYOUT
+======
+1. Linear Layout
+2. Constraint Layout
+           
+
+Di bagian xml, pilih split supaya split ama code
+*Linear Layout
+ - yg di bawah <? xml -> diganti jadi LinearLayout xmlns:android...
+ - android:orientation="vertical" -> turun ke bawah
+ - android:gravity="center" -> posisi di tengah
+ - android:padding="20dp" -> padding 20dp
+
+ **match_parent = ambil dari parent
+ **wrap_content = disesuain dengan content
+
+ a. TextView -> Label
+ - android:textSize="20sp" -> ukuran size
+ - android:textStyle="bold" -> bold
+
+ b. EditText -> TextField
+ - android:id="@+id/edtMainUsername" -> kesimpan di dalam android, nnti berhubungan ama java, edtMainUsername = nama username, mempermudah untuk edit
+ - android:inputType="textPassword" -> sensor pas isi field
+ - android:hint="Username" -> placeholder
+
+ c. Button 
+ - android:Text="Login" -> isi button 
+
+Buat page baru -> app > javva > com.example.. > activity > empty activity
+Log.wtf -> print message in Logcat
+
+Fragment -> content activity lebih dinamis
