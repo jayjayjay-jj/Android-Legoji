@@ -1,2 +1,2 @@
-# Android-Qualif
-Creating a simple Android app for teaching qualification
+# legoJI
+A simple Android app using Java
